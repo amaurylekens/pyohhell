@@ -10,7 +10,19 @@ $ pip install pyohhell
 
 ## Usage
 
-- TODO
+`pyohhell` can be used to play a Oh hell card game as follows:
+
+```python
+from pyohhell.game_engine import GameEngine
+from pyohhell.player import Player
+
+game_engine = GameEngine()
+player_1 = Player(1)
+player_2 = Player(2)
+game_engine.subscribe_player(player_1)
+game_engine.subscribe_player(player_2)
+game_engine.play_game(seed=42)
+```
 
 ## Contributing
 
